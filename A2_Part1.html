@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 - Part 01</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: pink;
+        }
+        .user-input{
+            margin-bottom: 8px;
+        }
+        .button{
+            margin-bottom: 8px;
+        }
+    </style>
+
+    <h1>Assignment 2 - Part 01</h1>
+    <h2>Recommended Weight Range</h2>
+
+    <div class="user-input">
+    <label for="quantity">Enter your Height (cm)</label>
+    <input type="number" id="height-in-cm" name="height-in-cm">
+    </div>
+
+    <div class="button">
+    <button onclick="weightRange()">Check your range</button>
+    </div>
+
+    <p id="final-output"></p>
+    <p id="lower-limit"></p>
+    <p id="upper-limit"></p>
+
+    <script>
+        function weightRange(){
+            let weight = parseFloat(document.getElementById('height-in-cm').value);
+            let lowerLimit = (weight/100) * (weight/100) * 18.5;
+            let upperLimit = (weight/100) * (weight/100) * 24.9;
+            let lowerRange = lowerLimit.toFixed(2);
+            let upperRange = upperLimit.toFixed(2);
+
+            document.getElementById("final-output").innerHTML = "Your Recommended Weight Range is";
+            document.getElementById("lower-limit").innerHTML = "Lower Limit is = " + lowerRange + " Kg";
+            document.getElementById("upper-limit").innerHTML = "Upper Limit is = " + upperRange + " Kg";
+        
+        }
+    </script>
+
+</body>
+</html>
