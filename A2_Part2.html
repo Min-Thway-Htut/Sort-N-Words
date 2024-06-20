@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 - Part 02</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: pink;
+        }
+        .user-input{
+            margin-bottom: 8px;
+        }
+        .button{
+            margin-bottom: 8px;
+        }
+    </style>
+    <h1>Assignment 2 - Part 02</h1>
+    <h2>Sort N number of words</h2>
+
+    <div class="user-input">
+        <label for="quantity">How many words do you want to enter?</label>
+        <input type="number" id="words" name="words">
+        </div>
+    
+    <div class="button">
+        <button onclick="sortWords()">Get words</button>
+    </div>
+
+    <p id="original-words"></p>
+    <p id="ascending-order"></p>
+    <p id="descending-order"></p>
+
+    <script>
+        function sortWords(){
+
+            let userInput = parseFloat(document.getElementById('words').value)
+
+            if (userInput === 1){
+                let one = prompt("Enter the word:");
+                let myArray = [one];
+
+                document.getElementById('original-words').innerHTML = "The words you entered = " + myArray;
+                document.getElementById('ascending-order').innerHTML = "Ascending order = " + myArray;
+                document.getElementById('descending-order').innerHTML = "Descending order = " + myArray;
+            }
+            else if (userInput === 2) {
+                let one = prompt("Enter the word:");
+                let two = prompt("Enter the word:");
+                let myArray = [one,two]
+
+                document.getElementById('original-words').innerHTML = "The words you entered = " + myArray;
+                document.getElementById('ascending-order').innerHTML = "Ascending order = " + myArray.sort();;
+                document.getElementById('descending-order').innerHTML = "Descending order = " + myArray.sort().reverse();
+            }
+            else if (userInput === 3){
+                let one = prompt("Enter the word:");
+                let two = prompt("Enter the word:");
+                let three = prompt("Enter the word:");
+                let myArray = [one,two,three]
+
+                document.getElementById('original-words').innerHTML = "The words you entered = " + myArray;
+                document.getElementById('ascending-order').innerHTML = "Ascending order = " + myArray.sort();;
+                document.getElementById('descending-order').innerHTML = "Descending order = " + myArray.sort().reverse();
+            }
+            else if (userInput === 4){
+                let one = prompt("Enter the word:");
+                let two = prompt("Enter the word:");
+                let three = prompt("Enter the word:");
+                let four = prompt("Enter the word:");
+                let myArray = [one,two,three,four]
+
+                document.getElementById('original-words').innerHTML = "The words you entered = " + myArray;
+                document.getElementById('ascending-order').innerHTML = "Ascending order = " + myArray.sort();;
+                document.getElementById('descending-order').innerHTML = "Descending order = " + myArray.sort().reverse();
+            }
+            else if (userInput === 5){
+                let one = prompt("Enter the word:");
+                let two = prompt("Enter the word:");
+                let three = prompt("Enter the word:");
+                let four = prompt("Enter the word:");
+                let five = prompt("Enter the word:");
+                let myArray = [one,two,three,four,five];
+
+                document.getElementById('original-words').innerHTML = "The words you entered = " + myArray;
+                document.getElementById('ascending-order').innerHTML = "Ascending order = " + myArray.sort();;
+                document.getElementById('descending-order').innerHTML = "Descending order = " + myArray.sort().reverse();
+            }
+            else if (userInput === 6){
+                let one = prompt("Enter the word:");
+                let two = prompt("Enter the word:");
+                let three = prompt("Enter the word:");
+                let four = prompt("Enter the word:");
+                let five = prompt("Enter the word:");
+                let six = prompt("Enter the word:");
+                let myArray = [one,two,three,four,five,six]
+
+                document.getElementById('original-words').innerHTML = "The words you entered = " + myArray;
+                document.getElementById('ascending-order').innerHTML = "Ascending order = " + myArray.sort();;
+                document.getElementById('descending-order').innerHTML = "Descending order = " + myArray.sort().reverse();
+            }
+            else if (userInput === 7){
+                let one = prompt("Enter the word:");
+                let two = prompt("Enter the word:");
+                let three = prompt("Enter the word:");
+                let four = prompt("Enter the word:");
+                let five = prompt("Enter the word:");
+                let six = prompt("Enter the word:");
+                let seven = prompt("Enter the word:");
+                let myArray = [one,two,three,four,five,six]
+
+                document.getElementById('original-words').innerHTML = "The words you entered = " + myArray;
+                document.getElementById('ascending-order').innerHTML = "Ascending order = " + myArray.sort();;
+                document.getElementById('descending-order').innerHTML = "Descending order = " + myArray.sort().reverse();
+            }
+            else if (userInput === 8){
+                let one = prompt("Enter the word:");
+                let two = prompt("Enter the word:");
+                let three = prompt("Enter the word:");
+                let four = prompt("Enter the word:");
+                let five = prompt("Enter the word:");
+                let six = prompt("Enter the word:");
+                let seven = prompt("Enter the word:");
+                let eight = prompt("Enter the word:");
+                let myArray = [one,two,three,four,five,six,seven,eight];
+
+                document.getElementById('original-words').innerHTML = "The words you entered = " + myArray;
+                document.getElementById('ascending-order').innerHTML = "Ascending order = " + myArray.sort();;
+                document.getElementById('descending-order').innerHTML = "Descending order = " + myArray.sort().reverse();
+            }
+            else if (userInput === 9){
+                let one = prompt("Enter the word:");
+                let two = prompt("Enter the word:");
+                let three = prompt("Enter the word:");
+                let four = prompt("Enter the word:");
+                let five = prompt("Enter the word:");
+                let six = prompt("Enter the word:");
+                let seven = prompt("Enter the word:");
+                let eight = prompt("Enter the word:");
+                let nine = prompt("Enter the word:");
+                let myArray = [one,two,three,four,five,six,seven,eight,nine]
+
+                document.getElementById('original-words').innerHTML = "The words you entered = " + myArray;
+                document.getElementById('ascending-order').innerHTML = "Ascending order = " + myArray.sort();;
+                document.getElementById('descending-order').innerHTML = "Descending order = " + myArray.sort().reverse();
+            }
+
+
+        }
+    </script>
+
+
+</body>
+</html>
